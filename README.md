@@ -63,7 +63,8 @@ E --> F[Write to Processed Layer (Parquet)]
 ```
 ### 📸 Or view the image below:
 
-![ETL Flow Diagram](https://github.com/SRSuccesTemusaNdlovu/Spark-Data-Engineering-Pipeline/tree/main/assets/pipeline_diagram.png)
+![ETL Flow Diagram](https://raw.githubusercontent.com/SRSuccesTemusaNdlovu/Spark-Data-Engineering-Pipeline/main/assets/pipeline_diagram.png)
+
 
 ### 🧪 Sample Code Snippet
 
