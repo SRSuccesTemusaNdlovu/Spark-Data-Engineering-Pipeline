@@ -30,7 +30,8 @@ circuit-etl-spark/
 
 ```
 
-💻 Technologies Used
+### 💻 Technologies Used
+```
 Apache Spark (PySpark)
 
 Microsoft Fabric (Lakehouse)
@@ -40,25 +41,32 @@ Azure OneLake (abfss)
 Parquet (columnar storage)
 
 Python 3.x
+```
 
-📁 Data Source
+### 📁 Data Source
+```
 Raw Data Location:
 
 abfss://projects@onelake.dfs.fabric.microsoft.com/LakehouseTraining.Lakehouse/Files/circuits.csv
 Processed Data Output:
 
 abfss://projects@onelake.dfs.fabric.microsoft.com/LakehouseTraining.Lakehouse/Files/processed
-🔄 ETL Flow Overview
-
+```
+### 🔄 ETL Flow Overview
+```
 graph TD
 A[Read CSV from Raw Layer] --> B[Apply Schema]
 B --> C[Select Required Columns]
 C --> D[Rename Columns]
 D --> E[Add Ingestion Timestamp]
 E --> F[Write to Processed Layer (Parquet)]
-📸 Or view the image below:
+```
+### 📸 Or view the image below:
+```
+![ETL Flow Diagram](https://github.com/SRSuccesTemusaNdlovu/Spark-Data-Engineering-Pipeline/tree/main/assets/pipeline_diagram.png)
+```
 
-🧪 Sample Code Snippet
+### 🧪 Sample Code Snippet
 
 ```
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DoubleType
@@ -101,7 +109,8 @@ final_df.write.mode("overwrite").parquet(
 
 ```
 
-📦 Output
+### 📦 Output
+```
 The processed data is stored in Parquet format and can now be used for:
 
 Data analysis
@@ -111,8 +120,10 @@ Reporting
 Machine Learning pipelines
 
 Dashboarding in Power BI
+```
 
-✅ Skills Demonstrated
+### ✅ Skills Demonstrated
+```
 Schema enforcement in PySpark
 
 Column transformation and data typing
@@ -122,9 +133,12 @@ Timestamp-based ingestion tracking
 Writing to Azure Data Lake with abfss
 
 Basic ETL pipeline architecture in Data Engineering
-
-📌 License
+```
+### 📌 License
+```
 MIT License. Feel free to use, share, and contribute!
-
-🙌 Acknowledgements
+```
+### 🙌 Acknowledgements
+```
 Built as part of my learning journey into Data Engineering using Apache Spark on Microsoft Fabric. Inspired by the need to structure and automate data preparation in a scalable manner
+```
