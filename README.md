@@ -62,9 +62,8 @@ D --> E[Add Ingestion Timestamp]
 E --> F[Write to Processed Layer (Parquet)]
 ```
 ### 📸 Or view the image below:
-```
+
 ![ETL Flow Diagram](https://github.com/SRSuccesTemusaNdlovu/Spark-Data-Engineering-Pipeline/tree/main/assets/pipeline_diagram.png)
-```
 
 ### 🧪 Sample Code Snippet
 
